@@ -4,13 +4,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevHub - Test Live Server</title>
+    <meta name="description"
+        content="Portfolio de [BigBearGazo], développeur front-end junior spécialisé en HTML, CSS et JavaScript">
+    <meta name="author" content="[BigBearGazo]">
+    <title>DevHub - [BigBearGazo] | Développeur Front-End</title>
+
+    <!-- Favicon (optionnel) -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <h1>🚀 Live Server fonctionne !</h1>
-    <p>Si vous voyez cette page, votre environnement est correctement configuré.</p>
-</body>
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <h1><a href="#accueil">DevHub</a></h1>
+            </div>
 
+            <nav class="breadcrumb" aria-label="Fil d’Ariane">
+                <ol>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="pages/portfolio.html">Portfolio</a></li>
+                    <li><a href="#about">À propos</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                    <li><a href="pages/blog.html">Blog</a></li>
+                </ol>
+            </nav>
+        </div>
+    </header>
+    <main id="main-content" class="main-content">
+        <section id="hero" class="hero-section">
+            <div class="container">
+                <div class="hero-content">
+                    <h2 class="hero-title">
+                        Bonjour, je suis <span class="highlight">[BigBearGazo]</span>
+                    </h2>
+                    <p class="hero-subtitle">Développeur Front-End </p>
+                    <p class="hero-description">
+                        Passionné par la création d'expériences web modernes et accessibles.
+                        Spécialisé en HTML5, CSS3 et JavaScript ES6+.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="pages/portfolio.html" class="btn btn-primary">Voir mes projets</a>
+                        <a href="pages/contact.html" class="btn btn-secondary">Me contacter</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">À propos de moi</h2>
+    
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Diplômé en développement web, je me spécialise dans la création
+                            d'interfaces utilisateur modernes et responsive. Ma passion pour
+                            les technologies front-end me pousse à apprendre continuellement
+                            et à suivre les meilleures pratiques du secteur.
+                            J'ai l'opportunités de rejoindre les équipes de enedis pour poursuivre mes études en CDA et
+                            ainsi renforcée
+                            mes connaissances et mon expériences professionnels.
+                        </p>
+                        <p>
+                            Mon approche combine du Tryhard , du Tryhard et du Tryhard.
+                            Comme dans les jeux j'aime que mon trvail soit carré professionnel et remplit en temps voulus.
+                        </p>
+    
+                        <h3>Mon parcours</h3>
+                        <ul class="timeline">
+                            <li>
+                                <strong>2024/2025</strong> - Formation DevWeb et Web Mobile (1 155 heures).
+                            </li>
+                            <li>
+                                <strong>2023</strong> - Agents de sécurité et sécurité incendie.
+                            </li>
+                            <li>
+                                <strong>2022</strong> - Auxilliaire Ambulancier
+                            </li>
+    
+                            <li>
+                                <strong>2022</strong> - Titre Porteur Poids Lourd
+                            </li>
+                            <li>
+                                <strong>2019/2021</strong> - Vente
+                            </li>
+                            <li>
+                                <strong>2019/2021</strong> - Pompier Volontaire
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="about-image">
+                        <figure>
+                            <img src="assets/images/khloros_card.jpg" alt="Photo de profil de [BigBearGaz]"
+                                class="profile-photo">
+                            <figcaption>BigBearGazo</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="services" class="services-section">
+            <div class="container">
+                <h2 class="section-title">Mes compétences</h2>
+                <p class="section-description">
+                    Technologies et outils que je maîtrise pour créer des expériences web modernes.
+                </p>
+    
+                <div class="skills-grid">
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <span role="img" aria-label="HTML5">🌐</span>
+                        </div>
+                        <h3 class="skill-title">HTML5</h3>
+                        <p class="skill-description">
+                            Structure sémantique, accessibilité, optimisation SEO.
+                            Maîtrise des nouvelles balises et APIs.
+                        </p>
+                        <div class="skill-level">
+                            <span class="skill-label">Niveau :</span>
+                            <span class="skill-value">Intermédiaire</span>
+                        </div>
+                    </article>
+    
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <span role="img" aria-label="CSS3">🎨</span>
+                        </div>
+                        <h3 class="skill-title">CSS3</h3>
+                        <p class="skill-description">
+                            Design responsive, Flexbox, Grid, animations.
+                            Méthodologies modernes et performances optimisées.
+                        </p>
+                        <div class="skill-level">
+                            <span class="skill-label">Niveau :</span>
+                            <span class="skill-value">Intermédiaire</span>
+                        </div>
+                    </article>
+    
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <span role="img" aria-label="JavaScript">⚡</span>
+                        </div>
+                        <h3 class="skill-title">JavaScript ES6+</h3>
+                        <p class="skill-description">
+                            Interactivité, manipulation DOM, APIs modernes.
+                            Approche orientée composants et bonnes pratiques.
+                        </p>
+                        <div class="skill-level">
+                            <span class="skill-label">Niveau :</span>
+                            <span class="skill-value">Débutant</span>
+                        </div>
+                    </article>
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <span role="img" aria-label="React">⚛️</span>
+                        </div>
+                        <h3 class="skill-title">React (intermédiaire)</h3>
+                        <p class="skill-description">
+                            Développement de composants, gestion d’état avec hooks, intégration d’APIs et routing.
+                            Utilisation des bonnes pratiques et organisation de projets.
+                        </p>
+                        <div class="skill-level">
+                            <span class="skill-label">Niveau :</span>
+                            <span class="skill-value">Intermédiaire</span>
+                        </div>
+                    </article>
+    
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <span role="img" aria-label="Symfony">🐘</span>
+                        </div>
+                        <h3 class="skill-title">PHP Symfony (intermédiaire)</h3>
+                        <p class="skill-description">
+                            Création d’applications web MVC, gestion des routes, formulaires, sécurité et base de données
+                            avec Doctrine.
+                            Respect des conventions Symfony et utilisation de bundles.
+                        </p>
+                        <div class="skill-level">
+                            <span class="skill-label">Niveau :</span>
+                            <span class="skill-value">Intermédiaire</span>
+                        </div>
+                    </article>
+    
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <span role="img" aria-label="Bootstrap">🎨</span>
+                        </div>
+                        <h3 class="skill-title">Bootstrap (intermédiaire)</h3>
+                        <p class="skill-description">
+                            Mise en page responsive, utilisation des composants (cards, modals, navbar), personnalisation
+                            avec les
+                            utilitaires.
+                            Maîtrise des grilles et adaptation mobile.
+                        </p>
+                        <div class="skill-level">
+                            <span class="skill-label">Niveau :</span>
+                            <span class="skill-value">Intermédiaire</span>
+                        </div>
+                    </article>
+    
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <span role="img" aria-label="Docker">🐳</span>
+                        </div>
+                        <h3 class="skill-title">Docker (aperçu)</h3>
+                        <p class="skill-description">
+                            Découverte de la conteneurisation, création de Dockerfile simple, exécution de conteneurs pour
+                            le développement
+                            local.
+                        </p>
+                        <div class="skill-level">
+                            <span class="skill-label">Niveau :</span>
+                            <span class="skill-value">Aperçu</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="cta-section">
+        <div class="container">
+            <h2>Travaillons ensemble</h2>
+            <p>Vous avez un projet ? Contactons-nous pour en discuter !</p>
+            <a href="pages/contact.html" class="btn btn-primary">Commencer un projet</a>
+        </div>
+    </section>
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>DevHub - [BigBearGazo]</h3>
+                    <p>Développeur Front-End Junior basé en France</p>
+                </div>
+    
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <address>
+                        <p>Email : <a href="mailto:votre.email@example.com">rezto1410@gmail.com</a></p>
+                        <p>LinkedIn : <a href="https://www.linkedin.com/in/tonin-rez-2369a62a3/" target="_blank"
+                                rel="noopener noreferrer">https://www.linkedin.com/in/tonin-rez-2369a62a3/</a></p>
+                        <p>GitHub : <a href="https://github.com/BigBearGaz" target="_blank"
+                                rel="noopener noreferrer">https://github.com/BigBearGaz</a></p>
+                    </address>
+                </div>
+    
+                <div class="footer-legal">
+                    <p>&copy; 2025 [BigBearGazo]. Tous droits réservés.</p>
+                    <p>Réalisé dans le cadre de la formation DevHub</p>
+                </div>
+            </div>
+        </div>
+        </footer>
+</body>
 </html>
