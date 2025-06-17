@@ -15,27 +15,47 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="../css/style.css">
+    <meta property="og:title" content="DevHub - [Votre Nom] | Développeur Front-End">
+    <meta property="og:description"
+        content="Portfolio de [Votre Nom], développeur front-end junior spécialisé en HTML, CSS et JavaScript">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:url" content="https://votre-username.github.io/devhub-formation">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DevHub - [Votre Nom]">
+    <meta name="twitter:description" content="Développeur Front-End Junior - Portfolio">
 </head>
 
 <body>
     <a href="#main-content" class="skip-link">Aller au contenu principal</a>
     <header class="site-header">
         <div class="container">
-            <div class="logo">
-                <h1><a href="#accueil">DevHub</a></h1>
-            </div>
-
-            <nav class="breadcrumb" aria-label="Fil d’Ariane">
-                <ol>
+            <a href="../index.html" class="logo">DevHub</a>
+    
+            <!-- Hamburger menu button -->
+            <button class="menu-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+    
+            <!-- Navigation -->
+            <nav class="main-navigation">
+                <ul class="nav-list">
                     <li><a href="../index.html" class="nav-link">Accueil</a></li>
-                    <li><a href="portfolio.html" class="nav-link active">Portfolio</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
                     <li><a href="../index.html#about" class="nav-link">À propos</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
                     <li><a href="blog.html" class="nav-link">Blog</a></li>
-                </ol>
+                </ul>
             </nav>
         </div>
+    
+        <!-- Overlay for hamburger -->
+        <div class="menu-overlay"></div>
     </header>
+    
 
     <!-- Main Content -->
     <main class="main-content">
@@ -69,10 +89,9 @@
                 <div class="portfolio-grid">
 
                     <!-- Projet 1 -->
-                    <article class="project-card" data-category="html-css responsive">
+                    <article id="projet1" class="project-card" data-category="html-css responsive">
                         <div class="project-image">
-                            <img src="../assets/images/restau.jpg"
-                                alt="Capture d'écran du projet Site Vitrine Restaurant">
+                            <img src="../assets/images/restau.jpg" alt="Capture d'écran du projet Site Vitrine Restaurant">
                             <div class="project-overlay">
                                 <div class="project-links">
                                     <a href="#" class="btn btn-primary btn-sm">Voir le projet</a>
@@ -97,6 +116,7 @@
                             </div>
                         </div>
                     </article>
+
 
                     <!-- Projet 2 -->
                     <article class="project-card" data-category="javascript responsive">
@@ -224,6 +244,7 @@
             </div>
         </div>
     </footer>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>

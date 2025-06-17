@@ -14,27 +14,47 @@
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+    <meta property="og:title" content="DevHub - [Votre Nom] | Développeur Front-End">
+    <meta property="og:description"
+        content="Portfolio de [Votre Nom], développeur front-end junior spécialisé en HTML, CSS et JavaScript">
+    <meta property="og:image" content="assets/images/og-image.jpg">
+    <meta property="og:url" content="https://votre-username.github.io/devhub-formation">
+    
+    <!-- Twitter Cards -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="DevHub - [Votre Nom]">
+    <meta name="twitter:description" content="Développeur Front-End Junior - Portfolio">
 </head>
 
 <body>
     <a href="#main-content" class="skip-link">Aller au contenu principal</a>
     <header class="site-header">
         <div class="container">
-            <div class="logo">
-                <h1><a href="#accueil">DevHub</a></h1>
-            </div>
-
-            <nav class="breadcrumb" aria-label="Fil d’Ariane">
-                <ol>
-                    <li><a href="#accueil">Accueil</a></li>
-                    <li><a href="pages/portfolio.html">Portfolio</a></li>
-                    <li><a href="#about">À propos</a></li>
-                    <li><a href="pages/contact.html">Contact</a></li>
-                    <li><a href="pages/blog.html">Blog</a></li>
-                </ol>
+            <a href="/" class="logo">DevHub</a>
+    
+            <!-- Hamburger menu button -->
+            <button class="menu-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+    
+            <!-- Navigation -->
+            <nav class="main-navigation">
+                <ul class="nav-list">
+                    <li><a href="#accueil" class="nav-link">Accueil</a></li>
+                    <li><a href="/pages/portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="/index.html#about" class="nav-link">À propos</a></li>
+                    <li><a href="/pages/contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="/pages/blog.html">Blog</a></li>
+                </ul>
             </nav>
         </div>
+    
+        <!-- Overlay -->
+        <div class="menu-overlay"></div>
     </header>
+      
     <main id="main-content" class="main-content">
         <section id="hero" class="hero-section">
             <div class="container">
@@ -260,5 +280,7 @@
             </div>
         </div>
         </footer>
+<!-- Scripts -->
+<script src="js/main.js"></script>
 </body>
 </html>

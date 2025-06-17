@@ -36,17 +36,18 @@ devhub-formation/
 ### Sprint 1 - Fondations & Setup
 - [x] **Séquence 1** : Setup environnement & Git
 - [x] **Séquence 2** : Structure HTML5 sémantique
-- [ ] **Séquence 3** : CSS3 fondamentaux
-- [ ] **Séquence 4** : Layout CSS moderne
+- [x] **Séquence 3** : CSS3 fondamentaux et styling
+- [x] **Séquence 4** : Layout CSS moderne avec Grid & Flexbox
 - [ ] **Séquence 5** : Navigation & déploiement
 
-### Fonctionnalités implémentées
-- ✅ Structure HTML5 sémantique complète
-- ✅ Navigation entre les sections
-- ✅ Contenu accessible et validé W3C
-- ✅ Meta-données SEO optimisées
+### Layout System
+- **CSS Grid** : Layouts bidimensionnels, grilles responsives
+- **Flexbox** : Alignements et distributions monodimensionnels
+- **Responsive** : Mobile-first avec breakpoints optimisés
+- **Utility Classes** : Système de classes réutilisables
 
-### Prochaines étapes
-- CSS styling et layout responsive
-- Système de navigation interactif
-- Optimisation des performances
+### Pages Créées
+- ✅ **Accueil** : Layout complet avec Grid et Flexbox optimisés
+- ✅ **Portfolio** : Grille de projets responsive avec filtres
+- 🔄 **Contact** : À créer en séquence 5
+- 🔄 **Blog** : À créer en Sprint 3

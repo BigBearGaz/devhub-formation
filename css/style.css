@@ -572,3 +572,161 @@ a:hover, a:focus {
     color: #fff;
     box-shadow: 0 4px 8px rgba(0, 119, 255, 0.3);
 }
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Header styling */
+  .site-header {
+    background-color: #111;
+    color: #fff;
+    position: relative;
+  }
+  .site-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  /* Hamburger button */
+  .menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+  }
+  
+  /* Transform bars into X when active */
+  .menu-toggle.open .bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  .menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+  
+  /* Navigation menu */
+  .main-navigation {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #111;
+    transform: translateY(-200%);
+    transition: transform 0.3s ease;
+  }
+  .main-navigation.open {
+    transform: translateY(0);
+  }
+  .nav-list {
+    list-style: none;
+  }
+  .nav-list li {
+    border-top: 1px solid #333;
+  }
+  .nav-list a {
+    display: block;
+    padding: 1rem;
+    color: #fff;
+    text-decoration: none;
+  }
+  .nav-list a:hover {
+    background-color: #222;
+  }
+  
+  /* Sous-menu */
+  .has-submenu > a::after {
+    content: " ▼";
+    font-size: 0.7rem;
+  }
+  .submenu {
+    display: none;
+    background-color: #222;
+  }
+  .has-submenu:hover .submenu {
+    display: block;
+  }
+  .submenu li {
+    border-top: 1px solid #444;
+  }
+  
+  /* Responsive */
+  @media (min-width: 768px) {
+    .menu-toggle {
+      display: none;
+    }
+    .main-navigation {
+      position: static;
+      transform: none;
+      display: block;
+    }
+    .nav-list {
+      display: flex;
+      gap: 1rem;
+    }
+    .nav-list li {
+      border: none;
+    }
+    .submenu {
+      position: absolute;
+      background-color: #222;
+      display: none;
+    }
+    .has-submenu {
+      position: relative;
+    }
+    .has-submenu:hover .submenu {
+      display: block;
+    }
+    .submenu li {
+      border: none;
+    }
+  }
+/* Préchargement des ressources critiques */
+.hero-section::before {
+    will-change: transform;
+  }
+  
+  .skill-card:hover {
+    will-change: transform, box-shadow;
+  }
+  
+  .project-card:hover {
+    will-change: transform, box-shadow;
+  }
+  
+  /* Optimisation des animations */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+    }
+  }  
