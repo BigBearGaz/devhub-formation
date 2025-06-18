@@ -4,31 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Portfolio de BigBearGazo, développeur front-end junior spécialisé en HTML, CSS et JavaScript">
-    <meta name="author" content="BigBearGazo">
-    <title>Contact | DevHub - BigBearGazo</title>
-
-    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
-    <link rel="stylesheet" href="css/style.css">
-
-    <!-- Open Graph -->
-    <meta property="og:title" content="DevHub - BigBearGazo | Développeur Front-End">
-    <meta property="og:description"
-        content="Portfolio de BigBearGazo, développeur front-end junior spécialisé en HTML, CSS et JavaScript">
-    <meta property="og:image" content="assets/images/og-image.jpg">
-    <meta property="og:url" content="https://bigbeargaz.github.io/devhub-formation/">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="DevHub - BigBearGazo">
-    <meta name="twitter:description" content="Développeur Front-End Junior - Portfolio">
+    <title>Contact | DevHub - [BigBearGazo]</title>
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
+    <!-- Navigation identique -->
     <header class="site-header">
         <div class="container">
-            <a href="index.html#accueil" class="logo">DevHub</a>
+            <a href="/" class="logo">DevHub</a>
             <button class="menu-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -36,11 +20,11 @@
             </button>
             <nav class="main-navigation">
                 <ul class="nav-list">
-                    <li><a href="index.html#accueil" class="nav-link">Accueil</a></li>
-                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                    <li><a href="index.html#about" class="nav-link">À propos</a></li>
-                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
-                    <li><a href="blog.html" class="nav-link">Blog</a></li>
+                    <li><a href="/index.html#accueil" class="nav-link">Accueil</a></li>
+                    <li><a href="/pages/portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="/index.html#about" class="nav-link">À propos</a></li>
+                    <li><a href="/pages/contact.html" class="nav-link active">Contact</a></li>
+                    <li><a href="/pages/blog.html" class="nav-link">Blog</a></li>
                 </ul>
             </nav>
         </div>
@@ -81,11 +65,12 @@
         </section>
     </main>
 
+    <!-- Footer identique -->
     <footer class="site-footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
-                    <h3>DevHub - BigBearGazo</h3>
+                    <h3>DevHub - [BigBearGazo]</h3>
                     <p>Développeur Front-End Junior basé en France</p>
                 </div>
                 <div class="footer-contact">
@@ -99,14 +84,23 @@
                     </address>
                 </div>
                 <div class="footer-legal">
-                    <p>&copy; 2025 BigBearGazo. Tous droits réservés.</p>
+                    <p>&copy; 2025 [BigBearGazo]. Tous droits réservés.</p>
                     <p>Réalisé dans le cadre de la formation DevHub</p>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.querySelector(".contact-form");
+            form.addEventListener("submit", function (event) {
+                event.preventDefault(); // Empêche l'envoi réel du formulaire
+                form.innerHTML = '<div style="text-align:center; font-size:1.2rem; color:#232946; padding:2rem 0;">Votre demande a bien été envoyée.</div>';
+            });
+        });
+    </script>
+        
 </body>
 
 </html>
