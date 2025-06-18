@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | DevHub - [BigBearGazo]</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <!-- Navigation identique -->
+    <header class="site-header">
+        <div class="container">
+            <a href="/" class="logo">DevHub</a>
+            <button class="menu-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <nav class="main-navigation">
+                <ul class="nav-list">
+                    <li><a href="/index.html#accueil" class="nav-link">Accueil</a></li>
+                    <li><a href="/pages/portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="/index.html#about" class="nav-link">À propos</a></li>
+                    <li><a href="/pages/contact.html" class="nav-link active">Contact</a></li>
+                    <li><a href="/pages/blog.html" class="nav-link">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="menu-overlay"></div>
+    </header>
+
+    <main id="main-content" class="main-content">
+        <section class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Contactez-moi</h2>
+                <p class="section-description">
+                    Une question, une collaboration ou un projet ? Remplissez le formulaire ci-dessous, je vous
+                    répondrai rapidement !
+                </p>
+                <form class="contact-form" action="mailto:rezto1410@gmail.com" method="POST" enctype="text/plain">
+                    <div class="form-group">
+                        <label for="name">Nom <span aria-hidden="true">*</span></label>
+                        <input type="text" id="name" name="name" required placeholder="Votre nom">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email <span aria-hidden="true">*</span></label>
+                        <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject" name="subject" placeholder="Sujet de votre message">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message <span aria-hidden="true">*</span></label>
+                        <textarea id="message" name="message" rows="6" required
+                            placeholder="Votre message ici..."></textarea>
+                    </div>
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-primary">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer identique -->
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>DevHub - [BigBearGazo]</h3>
+                    <p>Développeur Front-End Junior basé en France</p>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <address>
+                        <p>Email : <a href="mailto:rezto1410@gmail.com">rezto1410@gmail.com</a></p>
+                        <p>LinkedIn : <a href="https://www.linkedin.com/in/tonin-rez-2369a62a3/" target="_blank"
+                                rel="noopener noreferrer">https://www.linkedin.com/in/tonin-rez-2369a62a3/</a></p>
+                        <p>GitHub : <a href="https://github.com/BigBearGaz" target="_blank"
+                                rel="noopener noreferrer">https://github.com/BigBearGaz</a></p>
+                    </address>
+                </div>
+                <div class="footer-legal">
+                    <p>&copy; 2025 [BigBearGazo]. Tous droits réservés.</p>
+                    <p>Réalisé dans le cadre de la formation DevHub</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+
+        
+</body>
+
+</html>

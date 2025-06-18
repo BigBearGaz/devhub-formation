@@ -130,4 +130,10 @@ document.addEventListener("DOMContentLoaded", () => {
     menuToggle.setAttribute("aria-expanded", !expanded);
   });
 });
-  
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".contact-form");
+    form.addEventListener("submit", function (event) {
+        event.preventDefault(); // Empêche l'envoi réel du formulaire
+        form.innerHTML = '<div style="text-align:center; font-size:1.2rem; color:#232946; padding:2rem 0;">Votre demande a bien été envoyée.</div>';
+    });
+});
