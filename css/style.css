@@ -816,43 +816,53 @@ textarea {
     margin: 2.5rem 0;
     padding: 2.5rem 1.5rem;
 }
+
 .blog-list {
     display: flex;
     flex-direction: column;
     gap: 2rem;
     margin-top: 2rem;
 }
+
 .blog-card {
     background: #f7f8fa;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(35,41,70,0.04);
     padding: 1.5rem 1.2rem;
-    transition: transform 0.15s, box-shadow 0.15s;
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
+
 .blog-card:hover {
     transform: translateY(-5px) scale(1.01);
     box-shadow: 0 8px 24px rgba(35,41,70,0.09);
 }
+
 .blog-title {
     font-size: 1.3rem;
     color: #232946;
     margin-bottom: 0.4rem;
 }
+
 .blog-meta {
     font-size: 0.95rem;
     color: #888;
     margin-bottom: 1rem;
+    font-style: italic;
 }
+
 .blog-excerpt {
     color: #333;
     margin-bottom: 1.2rem;
+    line-height: 1.5;
 }
+
 .blog-readmore {
     color: #eebbc3;
     text-decoration: none;
     font-weight: bold;
-    transition: color 0.2s;
+    transition: color 0.2s ease;
 }
+
 .blog-readmore:hover {
     color: #232946;
     text-decoration: underline;
