@@ -5,30 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Blog de BigBearGazo, développeur front-end junior passionné par le web et le développement. Découvrez mes articles sur HTML, CSS, JavaScript et plus.">
+        content="Portfolio de BigBearGazo, développeur front-end junior spécialisé en HTML, CSS et JavaScript">
     <meta name="author" content="BigBearGazo">
-    <title>Blog | DevHub - BigBearGazo</title>
+    <title>DevHub - BigBearGazo | Développeur Front-End</title>
 
+    <!-- BASE pour GitHub Pages -->
+    <base href="/devhub-formation/">
+
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
 
     <!-- Open Graph -->
-    <meta property="og:title" content="DevHub - BigBearGazo | Blog Développement Web">
+    <meta property="og:title" content="DevHub - BigBearGazo | Développeur Front-End">
     <meta property="og:description"
-        content="Découvrez les articles de BigBearGazo sur le développement front-end, astuces, projets et tutos.">
+        content="Portfolio de BigBearGazo, développeur front-end junior spécialisé en HTML, CSS et JavaScript">
     <meta property="og:image" content="assets/images/og-image.jpg">
     <meta property="og:url" content="https://bigbeargaz.github.io/devhub-formation/">
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="DevHub - BigBearGazo | Blog">
-    <meta name="twitter:description" content="Articles et tutoriels sur le développement web.">
+    <meta name="twitter:title" content="DevHub - BigBearGazo">
+    <meta name="twitter:description" content="Développeur Front-End Junior - Portfolio">
 </head>
 
 <body>
+    <!-- Navigation identique -->
     <header class="site-header">
         <div class="container">
-            <a href="index.html#accueil" class="logo">DevHub</a>
+            <a href="/" class="logo">DevHub</a>
             <button class="menu-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -36,54 +43,77 @@
             </button>
             <nav class="main-navigation">
                 <ul class="nav-list">
-                    <li><a href="index.html#accueil" class="nav-link">Accueil</a></li>
-                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
-                    <li><a href="index.html#about" class="nav-link">À propos</a></li>
-                    <li><a href="contact.html" class="nav-link">Contact</a></li>
-                    <li><a href="blog.html" class="nav-link active">Blog</a></li>
+                    <li><a href="../index.html#accueil" class="nav-link">Accueil</a></li>
+                    <li><a href="/pages/portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="../index.html#about" class="nav-link">À propos</a></li>
+                    <li><a href="/pages/contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="/pages/blog.html" class="nav-link active">Blog</a></li>
                 </ul>
             </nav>
         </div>
         <div class="menu-overlay"></div>
     </header>
 
-    <main id="main-content" class="main-content">
+    <main class="main-content">
         <section class="blog-section">
             <div class="container">
-                <h2 class="section-title">Mon Blog</h2>
+                <h2 class="section-title">Blog Etheriat Restart</h2>
                 <p class="section-description">
-                    Retrouvez ici mes articles et réflexions autour du développement web, mes projets, mes découvertes
-                    techniques et mes conseils pour progresser.
+                    Guides, astuces et actualités autour d’Etheriat Restart. Découvrez mes aventures, conseils et
+                    analyses sur ce jeu passionnant !
                 </p>
-
                 <div class="blog-list">
-                    <article class="blog-post">
-                        <h3 class="post-title">🚀 Mon premier projet HTML/CSS</h3>
-                        <p class="post-date">Publié le 10 juin 2025</p>
-                        <p class="post-excerpt">Dans cet article, je vous présente mon tout premier projet web réalisé
-                            en HTML et CSS uniquement, avec quelques conseils pour les débutants.</p>
-                        <a href="#" class="btn btn-secondary">Lire l'article</a>
+                    <!-- Article 1 -->
+                    <article class="blog-card">
+                        <h3 class="blog-title">🌟 Débuter sur Etheriat Restart : Guide du nouveau joueur</h3>
+                        <div class="blog-meta">Publié le 10 juin 2025 • Par BigBearGazo</div>
+                        <p class="blog-excerpt">
+                            Tu viens de rejoindre Etheriat Restart ? Voici les bases pour bien commencer, comprendre les
+                            mécaniques principales et éviter les erreurs classiques...
+                        </p>
+                        <a href="https://www.prydwen.gg/etheria-restart/" class="blog-readmore">Lire la suite</a>
                     </article>
-
-                    <article class="blog-post">
-                        <h3 class="post-title">🛠️ Pourquoi j'aime JavaScript</h3>
-                        <p class="post-date">Publié le 5 juin 2025</p>
-                        <p class="post-excerpt">JavaScript est un langage puissant qui m'a permis de passer de simples
-                            pages statiques à des projets interactifs. Voici pourquoi je l'apprécie.</p>
-                        <a href="#" class="btn btn-secondary">Lire l'article</a>
+                    <!-- Article 2 -->
+                    <article class="blog-card">
+                        <h3 class="blog-title">⚔️ Les meilleures classes pour progresser rapidement</h3>
+                        <div class="blog-meta">Publié le 7 juin 2025 • Par BigBearGazo</div>
+                        <p class="blog-excerpt">
+                            Guerrier, mage ou rôdeur ? Je te présente les forces et faiblesses de chaque classe, et mes
+                            conseils pour choisir celle qui te correspond le mieux sur Etheriat Restart.
+                        </p>
+                        <a href="https://www.prydwen.gg/etheria-restart/" class="blog-readmore">Lire la suite</a>
                     </article>
-
-                    <!-- Ajoute d'autres articles ici -->
+                    <!-- Article 3 -->
+                    <article class="blog-card">
+                        <h3 class="blog-title">💎 Astuces pour gagner de l’or sans payer</h3>
+                        <div class="blog-meta">Publié le 3 juin 2025 • Par BigBearGazo</div>
+                        <p class="blog-excerpt">
+                            Marre de galérer pour t’équiper ? Découvre mes techniques pour accumuler de l’or et des
+                            ressources sans sortir la carte bleue !
+                        </p>
+                        <a href="#" class="blog-readmore">Lire la suite</a>
+                    </article>
+                    <!-- Article 4 -->
+                    <article class="blog-card">
+                        <h3 class="blog-title">🔥 Nouveautés du patch 1.2 : ce qui change sur Etheriat Restart</h3>
+                        <div class="blog-meta">Publié le 1 juin 2025 • Par BigBearGazo</div>
+                        <p class="blog-excerpt">
+                            Le patch 1.2 apporte son lot de surprises ! On fait le point sur les nouvelles
+                            fonctionnalités, équilibrages et événements à ne pas manquer.
+                        </p>
+                        <a href="https://www.prydwen.gg/etheria-restart/" class="blog-readmore">Lire la suite</a>
+                    </article>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer identique -->
     <footer class="site-footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-info">
-                    <h3>DevHub - BigBearGazo</h3>
+                    <h3>DevHub - [BigBearGazo]</h3>
                     <p>Développeur Front-End Junior basé en France</p>
                 </div>
                 <div class="footer-contact">
@@ -97,14 +127,13 @@
                     </address>
                 </div>
                 <div class="footer-legal">
-                    <p>&copy; 2025 BigBearGazo. Tous droits réservés.</p>
+                    <p>&copy; 2025 [BigBearGazo]. Tous droits réservés.</p>
                     <p>Réalisé dans le cadre de la formation DevHub</p>
                 </div>
             </div>
         </div>
     </footer>
-
-    <script src="js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
