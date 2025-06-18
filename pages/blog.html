@@ -4,49 +4,48 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>DevHub - Blog | BigBearGazo</title>
     <meta name="description"
-        content="Portfolio de BigBearGazo, développeur front-end junior spécialisé en HTML, CSS et JavaScript" />
+        content="Blog de BigBearGazo, développeur front-end junior spécialisé en HTML, CSS et JavaScript" />
     <meta name="author" content="BigBearGazo" />
-    <title>DevHub - BigBearGazo | Blog Etheriat Restart</title>
-
-    <!-- BASE pour GitHub Pages -->
-    <base href="/devhub-formation/" />
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Open Graph -->
-    <meta property="og:title" content="DevHub - BigBearGazo | Blog Etheriat Restart" />
+    <meta property="og:title" content="DevHub - Blog | BigBearGazo" />
     <meta property="og:description"
-        content="Guides, astuces et actualités autour d’Etheriat Restart. Découvrez mes conseils et analyses." />
+        content="Blog de BigBearGazo, développeur front-end junior spécialisé en HTML, CSS et JavaScript" />
     <meta property="og:image" content="assets/images/og-image.jpg" />
-    <meta property="og:url" content="https://bigbeargaz.github.io/devhub-formation/pages/blog.html" />
+    <meta property="og:url" content="https://username.github.io/devhub-formation/blog.html" />
 
-    <!-- Twitter Card -->
+    <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="DevHub - BigBearGazo | Blog Etheriat Restart" />
-    <meta name="twitter:description"
-        content="Guides, astuces et actualités autour d’Etheriat Restart. Découvrez mes conseils et analyses." />
+    <meta name="twitter:title" content="DevHub - Blog | BigBearGazo" />
+    <meta name="twitter:description" content="Blog de BigBearGazo, développeur front-end junior" />
 </head>
 
 <body>
-    <!-- Header commun -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
     <header class="site-header">
         <div class="container">
-            <a href="../index.html" class="logo">DevHub</a>
+            <a href="index.html" class="logo">DevHub</a>
+
             <button class="menu-toggle" aria-label="Ouvrir le menu de navigation" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
             </button>
-            <nav class="main-navigation" aria-label="Menu principal">
+
+            <nav class="main-navigation">
                 <ul class="nav-list">
-                    <li><a href="../index.html" class="nav-link">Accueil</a></li>
-                    <li><a href="../portfolio.html" class="nav-link">Portfolio</a></li>
-                    <li><a href="../index.html#about" class="nav-link">À propos</a></li>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                    <li><a href="index.html#about" class="nav-link">À propos</a></li>
                     <li><a href="contact.html" class="nav-link">Contact</a></li>
                     <li><a href="blog.html" class="nav-link active">Blog</a></li>
                 </ul>
@@ -55,69 +54,61 @@
         <div class="menu-overlay"></div>
     </header>
 
-    <!-- Contenu principal -->
-    <main class="main-content">
-        <section class="blog-section">
-            <div class="container">
-                <h1 class="section-title">Blog Etheriat Restart</h1>
-                <p class="section-description">
-                    Guides, astuces et actualités autour d’Etheriat Restart. Découvrez mes aventures, conseils et
-                    analyses sur ce jeu passionnant !
-                </p>
+    <main id="main-content" class="main-content">
+        <section class="blog-section container">
+            <h2 class="section-title">Blog Etheriat Restart</h2>
+            <p class="section-description">
+                Guides, astuces et actualités autour d’Etheriat Restart. Découvrez mes aventures, conseils et analyses
+                sur ce jeu passionnant !
+            </p>
 
-                <div class="blog-list">
-                    <!-- Article 1 -->
-                    <article class="blog-card">
-                        <h2 class="blog-title">🌟 Débuter sur Etheriat Restart : Guide du nouveau joueur</h2>
-                        <div class="blog-meta">Publié le 10 juin 2025 • Par BigBearGazo</div>
-                        <p class="blog-excerpt">
-                            Tu viens de rejoindre Etheriat Restart ? Voici les bases pour bien commencer, comprendre les
-                            mécaniques principales et éviter les erreurs classiques...
-                        </p>
-                        <a href="https://www.prydwen.gg/etheria-restart/" class="blog-readmore" target="_blank"
-                            rel="noopener noreferrer">Lire la suite</a>
-                    </article>
+            <div class="blog-list">
+                <article class="blog-card">
+                    <h3 class="blog-title">🌟 Débuter sur Etheriat Restart : Guide du nouveau joueur</h3>
+                    <div class="blog-meta">Publié le 10 juin 2025 • Par BigBearGazo</div>
+                    <p class="blog-excerpt">
+                        Tu viens de rejoindre Etheriat Restart ? Voici les bases pour bien commencer, comprendre les
+                        mécaniques principales et éviter les erreurs classiques...
+                    </p>
+                    <a href="https://www.prydwen.gg/etheria-restart/" class="blog-readmore" target="_blank"
+                        rel="noopener noreferrer">Lire la suite</a>
+                </article>
 
-                    <!-- Article 2 -->
-                    <article class="blog-card">
-                        <h2 class="blog-title">⚔️ Les meilleures classes pour progresser rapidement</h2>
-                        <div class="blog-meta">Publié le 7 juin 2025 • Par BigBearGazo</div>
-                        <p class="blog-excerpt">
-                            Guerrier, mage ou rôdeur ? Je te présente les forces et faiblesses de chaque classe, et mes
-                            conseils pour choisir celle qui te correspond le mieux sur Etheriat Restart.
-                        </p>
-                        <a href="https://www.prydwen.gg/etheria-restart/" class="blog-readmore" target="_blank"
-                            rel="noopener noreferrer">Lire la suite</a>
-                    </article>
+                <article class="blog-card">
+                    <h3 class="blog-title">⚔️ Les meilleures classes pour progresser rapidement</h3>
+                    <div class="blog-meta">Publié le 7 juin 2025 • Par BigBearGazo</div>
+                    <p class="blog-excerpt">
+                        Guerrier, mage ou rôdeur ? Je te présente les forces et faiblesses de chaque classe, et mes
+                        conseils pour choisir celle qui te correspond le mieux sur Etheriat Restart.
+                    </p>
+                    <a href="https://www.prydwen.gg/etheria-restart/" class="blog-readmore" target="_blank"
+                        rel="noopener noreferrer">Lire la suite</a>
+                </article>
 
-                    <!-- Article 3 -->
-                    <article class="blog-card">
-                        <h2 class="blog-title">💎 Astuces pour gagner de l’or sans payer</h2>
-                        <div class="blog-meta">Publié le 3 juin 2025 • Par BigBearGazo</div>
-                        <p class="blog-excerpt">
-                            Marre de galérer pour t’équiper ? Découvre mes techniques pour accumuler de l’or et des
-                            ressources sans sortir la carte bleue !
-                        </p>
-                        <a href="#" class="blog-readmore">Lire la suite</a>
-                    </article>
+                <article class="blog-card">
+                    <h3 class="blog-title">💎 Astuces pour gagner de l’or sans payer</h3>
+                    <div class="blog-meta">Publié le 3 juin 2025 • Par BigBearGazo</div>
+                    <p class="blog-excerpt">
+                        Marre de galérer pour t’équiper ? Découvre mes techniques pour accumuler de l’or et des
+                        ressources sans sortir la carte bleue !
+                    </p>
+                    <a href="#" class="blog-readmore">Lire la suite</a>
+                </article>
 
-                    <!-- Article 4 -->
-                    <article class="blog-card">
-                        <h2 class="blog-title">🔥 Nouveautés du patch 1.2 : ce qui change sur Etheriat Restart</h2>
-                        <div class="blog-meta">Publié le 1 juin 2025 • Par BigBearGazo</div>
-                        <p class="blog-excerpt">
-                            Le patch 1.2 apporte son lot de surprises ! On fait le point sur les nouvelles
-                            fonctionnalités, équilibrages et événements à ne pas manquer.
-                        </p>
-                        <a href="https://www.prydwen.gg/etheria-restart/" class="blog-readmore" target="_blank"
-                            rel="noopener noreferrer">Lire la suite</a>
-                    </article>
-                </div>
+                <article class="blog-card">
+                    <h3 class="blog-title">🔥 Nouveautés du patch 1.2 : ce qui change sur Etheriat Restart</h3>
+                    <div class="blog-meta">Publié le 1 juin 2025 • Par BigBearGazo</div>
+                    <p class="blog-excerpt">
+                        Le patch 1.2 apporte son lot de surprises ! On fait le point sur les nouvelles fonctionnalités,
+                        équilibrages et événements à ne pas manquer.
+                    </p>
+                    <a href="https://www.prydwen.gg/etheria-restart/" class="blog-readmore" target="_blank"
+                        rel="noopener noreferrer">Lire la suite</a>
+                </article>
             </div>
         </section>
     </main>
 
-    <!-- Footer commun -->
     <footer class="site-footer">
         <div class="container">
             <div class="footer-content">
@@ -129,17 +120,10 @@
                     <h4>Contact</h4>
                     <address>
                         <p>Email : <a href="mailto:rezto1410@gmail.com">rezto1410@gmail.com</a></p>
-                        <p>LinkedIn :
-                            <a href="https://www.linkedin.com/in/tonin-rez-2369a62a3/" target="_blank"
-                                rel="noopener noreferrer">
-                                https://www.linkedin.com/in/tonin-rez-2369a62a3/
-                            </a>
-                        </p>
-                        <p>GitHub :
-                            <a href="https://github.com/BigBearGaz" target="_blank" rel="noopener noreferrer">
-                                https://github.com/BigBearGaz
-                            </a>
-                        </p>
+                        <p>LinkedIn : <a href="https://www.linkedin.com/in/tonin-rez-2369a62a3/" target="_blank"
+                                rel="noopener noreferrer">tonin-rez-2369a62a3</a></p>
+                        <p>GitHub : <a href="https://github.com/BigBearGaz" target="_blank"
+                                rel="noopener noreferrer">BigBearGaz</a></p>
                     </address>
                 </div>
                 <div class="footer-legal">
@@ -150,7 +134,7 @@
         </div>
     </footer>
 
-    <script src="../js/main.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
